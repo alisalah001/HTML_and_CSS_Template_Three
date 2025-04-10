@@ -1,0 +1,60 @@
+body {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background-color: #0000889f;
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+form input {
+    background-color: cadetblue;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 200px;
+    /*
+    لحل المساحة الغير مستغلة
+    give it to the children
+    flex grow
+    */
+    flex-grow: 1;
+} 
+
+::placeholder {
+    color: white;
+}
+
+form button {
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+    flex-grow: 1;
+}
+
